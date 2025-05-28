@@ -1,0 +1,16 @@
+[allowlist]
+  description = "Global Allowlist for known expired secrets to test GitHub Secret Detection"
+
+  regexes = [
+    # Example AWS access key
+    '''aws_access_key_id:\s*AKIAQYLPMN5HNM4OZ56B''',
+
+    # Example AWS secret key
+    '''aws_secret_access_key:\s*Rm29CHLQCeaT6V/Rsw3UFWW1/UWQ0lhsWBa3bdca''',
+
+    # Example MongoDB URI
+    '''mongodb\+srv:\/\/svc-admin:kLeioeBne5lsopPf@mergington-high\.avocado\.mongodb\.net''',
+
+    # Example GitHub token
+    '''github-token:\s*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'''
+  ]
